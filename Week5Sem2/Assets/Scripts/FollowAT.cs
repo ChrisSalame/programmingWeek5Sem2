@@ -35,9 +35,10 @@ namespace NodeCanvas.Tasks.Actions {
             {
                 return;
             }
-            Vector3 fleeTarget = targetTransform.position + directionToMove.normalized * followRange;
 
-            targetPosition.value = fleeTarget;
+            Vector3 followTarget = targetTransform.position + directionToMove.normalized * followRange;
+
+            targetPosition.value = followTarget;
         }
 
         //Called when the task is disabled.
