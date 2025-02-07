@@ -607,10 +607,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parentBlackboard: {fileID: 0}
   _serializedBlackboard: '{"_variables":{"target":{"_name":"target","_id":"91e42ea7-2d83-442b-948e-498c010e3ff3","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"targetFlee":{"_name":"targetFlee","_id":"2205886f-5750-45ad-bf31-9b02392b57ee","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
   _objectReferences: []
   _serializedVariables:
   - _json: '{"_name":"target","_id":"91e42ea7-2d83-442b-948e-498c010e3ff3","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+    _references: []
+  - _json: '{"_name":"targetFlee","_id":"2205886f-5750-45ad-bf31-9b02392b57ee","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
     _references: []
 --- !u!114 &512824060
@@ -626,7 +630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _serializedExposedParameters: []
-  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"targetPosition":{"_name":"target","_targetVariableID":"91e42ea7-2d83-442b-948e-498c010e3ff3"},"targetTransform":1,"$type":"NodeCanvas.Tasks.Actions.SeekAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":269.0,"y":216.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"targetPosition":{"_name":"target","_targetVariableID":"91e42ea7-2d83-442b-948e-498c010e3ff3"},"sampleFrequency":0.25,"sampleRadius":5.0,"$type":"NodeCanvas.Tasks.Actions.navigateAT"}]},"_position":{"x":411.0,"y":77.0},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _boundGraphSerialization: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"targetPosition":{"_name":"target","_targetVariableID":"91e42ea7-2d83-442b-948e-498c010e3ff3"},"targetTransform":1,"fleeRange":3.0,"$type":"NodeCanvas.Tasks.Actions.FleeTargetAT"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":270.0,"y":216.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"targetPosition":{"_name":"target","_targetVariableID":"91e42ea7-2d83-442b-948e-498c010e3ff3"},"sampleFrequency":0.25,"sampleRadius":5.0,"$type":"NodeCanvas.Tasks.Actions.navigateAT"},{"targetPosition":{},"_isDisabled":true,"$type":"NodeCanvas.Tasks.Actions.navigateFleeAT"}]},"_position":{"x":408.0,"y":77.0},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _boundGraphObjectReferences:
   - {fileID: 0}
   - {fileID: 2004367596}
@@ -2151,7 +2155,7 @@ Transform:
   m_GameObject: {fileID: 2004367595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.65, y: 0.45, z: 0.05}
+  m_LocalPosition: {x: 7.19, y: 0.45, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
